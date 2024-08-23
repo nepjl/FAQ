@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #43afc2;
+    gap: 25px;
+
+}
+
+h1{
+    color: white;
+    font-size: 5em;
+}
+
+.container{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    gap: 1em;
+    
+}
+
+.faq{
+    box-sizing: border-box;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 1em;
+    position: relative;
+}
+
+.titre_faq{
+    margin-right: 3em;
+}
+
+.text_faq{
+    box-sizing: border-box;
+    text-align: justify;
+    
+    margin: 1em 0 0;
+    display: none;
+}
+
+.faq.active .text_faq{
+    display: block
+}
+
+i{
+    font-size: 2em;
+}
+
+.toggle_faq{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    font-size: 18px;
+    height: 30px;
+    width: 30px;
+    top: 30px;
+    right: 30px;
+    background-color: rgb(150, 0, 150);
+    color: white;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+
+}
+
+.toggle_faq:hover{
+    transform: scale(1.05);
+}
+
+.toggle_faq .bx-x{
+    display: none;
+}
+
+.faq.active .toggle_faq .bx-x{
+    display: block;
+}
+
+.faq.active .toggle_faq .bxs-chevron-down{
+    display: none;
+}
+
+.faq.active .toggle_faq{
+    background-color: red;
+}
+
+
